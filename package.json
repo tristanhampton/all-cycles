@@ -1,0 +1,24 @@
+{
+  "name": "all-cycles",
+  "version": "1.0.0",
+  "description": "Custom website for the non-profit All Cycles located in Edmonton, AB",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "all-cycles"
+  },
+  "keywords": [
+    "all-cycles",
+    "non-profit",
+    "charity",
+    "php",
+    "wordpress",
+    "web",
+    "development"
+  ],
+  "author": "Tristan Hampton & Santiago Garcia",
+  "license": "ISC"
+}
