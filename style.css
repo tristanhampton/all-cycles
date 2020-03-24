@@ -10,6 +10,132 @@
  *  Text Domain: all-cycles
  *  Tags: 
  *  */
+/* =============================================
+ * Display
+ * ============================================= */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:before {
+  box-sizing: border-box;
+}
+*:after {
+  box-sizing: border-box;
+}
+
+.small-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.large-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 1.2rem;
+}
+
+section {
+  padding: 4.8rem 5%;
+}
+
+/* ==========================================================================
+ * Helper classes
+ * ========================================================================== */
+/* * Hide visually and from screen readers
+ * */
+.hidden {
+  display: none !important;
+}
+
+/* =============================================
+ * Typography
+ * Major Second: 25.63, 22.78, 20.25, 18.00, 16, 14.22, 12.64
+ * Major Thirds: 39.06, 31.25, 25.00, 20.00, 16, 12.80, 10.24
+ * Perfect Fourth: 50.52, 37.90, 28.43, 21.33, 16, 12.00, 9.00
+ * =============================================== */
+p, li, label {
+  font: 1.6rem/2.4rem sans-serif;
+}
+
+nav li {
+  font-size: 2.4rem;
+}
+
+.logo p {
+  font: 3.2rem/4.8rem sans-serif;
+}
+
+h1 {
+  font: 6.4rem/7.2rem sans-serif;
+}
+@media (min-width: 550px) {
+  h1 {
+    font-size: 3.125rem;
+    line-height: 4.8rem;
+  }
+}
+@media (min-width: 700px) {
+  h1 {
+    font-size: 3.79rem;
+    line-height: 4.8rem;
+  }
+}
+
+h2 {
+  font: 4.2rem/4.8rem serif;
+}
+@media (min-width: 550px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4.8rem;
+  }
+}
+@media (min-width: 700px) {
+  h2 {
+    font-size: 2.843rem;
+    line-height: 4.8rem;
+  }
+}
+
+h3 {
+  font: 3.2rem/4.8rem serif;
+}
+@media (min-width: 550px) {
+  h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 700px) {
+  h3 {
+    font-size: 2.133rem;
+    line-height: 2.4rem;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+a:active {
+  color: inherit;
+}
+a:hover {
+  color: #333;
+}
+
 header {
   display: flex;
   justify-content: space-between;
