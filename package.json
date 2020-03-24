@@ -4,7 +4,8 @@
   "description": "Custom website for the non-profit All Cycles located in Edmonton, AB",
   "main": "index.php",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass sass/style.sass:style.css",
+    "watch": "sass --watch sass/style.sass:style.css"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
     "development"
   ],
   "author": "Tristan Hampton & Santiago Garcia",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.3"
+  }
 }
