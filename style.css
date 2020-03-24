@@ -34,4 +34,28 @@ header ul li:last-of-type {
   margin-right: 0;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+  max-width: 300px;
+}
+.form-group p {
+  margin-bottom: 0.6rem;
+}
+.form-group label {
+  margin-bottom: 0.6rem;
+}
+.form-group .check-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.form-group .check-control input {
+  margin-right: 0.6rem;
+}
+.form-group .check-control label {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

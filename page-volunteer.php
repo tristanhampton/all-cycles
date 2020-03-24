@@ -26,20 +26,30 @@
 
         <div class="form-group">
             <p>What roles are you interested in?</p>
-            <input type="check" id="pickup">
-            <label for="roles">Donation Pickup/Dropoff</label>
-            <input type="check" id="events">
-            <label for="events">Event Planning</label>
-            <input type="check" id="promotions">
-            <label for="promotions">Promotional Planning</label>
+            <div class="check-control">
+                <input type="checkbox" id="pickup">
+                <label for="roles">Donation Pickup/Dropoff</label>
+            </div>
+            <div class="check-control">
+                <input type="checkbox" id="events">
+                <label for="events">Event Planning</label>
+            </div>
+            <div class="check-control">
+                <input type="checkbox" id="promotions">
+                <label for="promotions">Promotional Planning</label>
+            </div>
         </div>
 
         <div class="form-group">
             <p>Do you have a vehicle that you might use as part of your volunteering role (ex. for pickup/drop off). This is not a requirement.</p>
-            <input type="radio" id="vehicle">
-            <label for="vehicle">Yes</label>
-            <input type="radio" id="vehicle">
-            <label for="vehicle">No</label>
+            <div class="check-control">
+                <input type="radio" id="vehicle">
+                <label for="vehicle">Yes</label>
+            </div>
+            <div class="check-control">
+                <input type="radio" id="vehicle">
+                <label for="vehicle">No</label>
+            </div>
         </div>
 
         <button role="submit">Volunteer!</button>
