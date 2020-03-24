@@ -1,3 +1,5 @@
+<?php get_header() ?>
+
 <main class="volunteer">
     <h2>Volunteer</h2>
     <!-- Create form for volunteers to fill out -->
@@ -43,3 +45,5 @@
         <button role="submit">Volunteer!</button>
     </form>
 </main>
+
+<?php get_footere() ?>
