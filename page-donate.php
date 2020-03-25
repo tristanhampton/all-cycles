@@ -1,8 +1,16 @@
 <?php get_header() ?>
 <main class="container">
     <h2>Donate</h2>
-    <p>Please refer to our guidelines <a href="http://tristanhampton.ca/all-cycles/guidelines">here</a> before donating.</p>
-    <p>You can also support us by purchasing from our <a href="https://www.amazon.ca/gp/registry/wishlist/OFRL3HEEQAXF/ref=nav_wishlist_lists_1">Amazon Wishlist</a></p>
+    <p><a href="http://tristanhampton.ca/all-cycles/guidelines">Guidelines</a></p>
+    <p><a href="https://www.amazon.ca/gp/registry/wishlist/OFRL3HEEQAXF/ref=nav_wishlist_lists_1">Amazon Wishlist</a></p>
+    <!-- Donation button links to paypal using this form. -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_donations" />
+        <input type="hidden" name="business" value="allcyclesedmonton@gmail.com" />
+        <input type="hidden" name="currency_code" value="CAD" />
+        <button type="submit">Donate</button>
+    </form>
+    
     <section>
         <h3>Donation Locations</h3>
         <?php $query = new WP_Query(array('post_type'=>'donation_location')) ?>

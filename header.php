@@ -9,7 +9,7 @@
 <body>
     <header>
         <div>
-            <img src="https://via.placeholder.com/75" alt="placeholder logo">
+            <a href="http://tristanhampton.ca/all-cycles"><img src="https://via.placeholder.com/75" alt="placeholder logo"></a> 
             <h1><a href="http://tristanhampton.ca/all-cycles">All Cycles</a></h1>
         </div>
         <nav>

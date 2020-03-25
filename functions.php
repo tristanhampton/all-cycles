@@ -96,7 +96,7 @@ add_action('acf/save_post', 'save_post_type_resource');
 add_action('acf/save_post', 'save_post_type_donations'); 
 
 
-// Hide the following pages from the WP dashboard
+// Hide the following pages from the WP dashboard. Comment out to bring back.
 function remove_menus(){
     remove_menu_page( 'index.php' );                  //Dashboard
     remove_menu_page( 'edit.php' );                   //Posts
@@ -106,13 +106,14 @@ function remove_menus(){
     remove_menu_page( 'tools.php');                 //Tools
     remove_menu_page( 'themes.php');                 //Appearance
     remove_menu_page( 'edit-comments.php' );          //Comments
+    remove_menu_page( 'edit.php?post_type=page' );    //Pages
 
 }
 add_action( 'admin_menu', 'remove_menus' );
 
 
 // Hide ACF from the dashboard
-// add_filter('acf/settings/show_admin', '__return_false');
+add_filter('acf/settings/show_admin', '__return_false');
 
 
 // Hide CPT UI from the dashboard
@@ -133,6 +134,8 @@ function remove_toolbar_buttons($wp_admin_bar) {
     $wp_admin_bar->remove_node('wp-logo');
     $wp_admin_bar->remove_node('customize');
     $wp_admin_bar->remove_node('search');
+    $wp_admin_bar->remove_node('edit');
+    $wp_admin_bar->remove_node('themes');
 }
 add_action('admin_bar_menu', 'remove_toolbar_buttons', 999);
 

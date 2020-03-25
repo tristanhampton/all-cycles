@@ -137,6 +137,8 @@ header {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #a3333d;
+  color: #FbF5F3;
 }
 header > div {
   display: flex;
