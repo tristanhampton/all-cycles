@@ -1,7 +1,7 @@
 <?php get_header() ?>
-<main class="contact">
+<main class="container">
     <h2>Contact Us!</h2>
-    <form action="POST">
+    <form action="link-to-formspree">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name">

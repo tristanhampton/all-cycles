@@ -1,9 +1,9 @@
 <?php get_header() ?>
 
-<main class="volunteer">
+<main class="container">
     <h2>Volunteer</h2>
     <!-- Create form for volunteers to fill out -->
-    <form action="POST">
+    <form action="link-to-formspree">
         <div class="form-group">
             <label for="first_name">First Name</label>
             <input type="text" id="first_name">

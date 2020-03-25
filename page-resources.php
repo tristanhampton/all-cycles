@@ -1,5 +1,5 @@
 <?php get_header() ?>
-    <main class="resources">
+    <main class="container">
         <h2>Resources</h2>
         <!-- Loop over beneficiaries -->
         <?php $query = new WP_Query(array('post_type'=>'resource')) ?>
@@ -10,6 +10,7 @@
                 <div class="beneficiary">
                     <h3><?php the_field('organization_name') ?></h3> 
                     <img src="<?php the_field('logo')  ?>" alt="<?php the_field('organization_name') ?> logo">
+                    <p><?php the_field('description') ?></p>
                     <div class="address">
                         <p><?php echo $address['street'] ?></p>
                         <p><?php echo $address['city'] ?>, <?php echo $address['province'] ?></p>

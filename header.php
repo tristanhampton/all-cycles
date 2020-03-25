@@ -16,9 +16,9 @@
             <ul>
                 <li><a href="http://tristanhampton.ca/all-cycles">Home</a></li>
                 <li><a href="http://tristanhampton.ca/all-cycles/donate">Donate</a></li>
-                <li><a href="http://tristanhampton.ca/all-cycles/beneficiaries">Beneficiaries</a></li>
                 <li><a href="http://tristanhampton.ca/all-cycles/volunteer">Volunteer</a></li>
                 <li><a href="http://tristanhampton.ca/all-cycles/resources">Resources</a></li>
+                <li><a href="http://tristanhampton.ca/all-cycles/beneficiaries">Beneficiaries</a></li>
                 <li><a href="http://tristanhampton.ca/all-cycles/contact">Contact</a></li>
             </ul>
         </nav>
