@@ -8,11 +8,13 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href="http://tristanhampton.ca/all-cycles"><img src="https://via.placeholder.com/75" alt="placeholder logo"></a> 
-            <h1><a href="http://tristanhampton.ca/all-cycles">All Cycles</a></h1>
+        <div class="logo">
+            <a href="http://tristanhampton.ca/all-cycles"><img src="<?php echo get_template_directory_uri();?>/assets/img/droplet-white.svg" alt="All Cycles logo"></a> 
+            <h1><a href="http://tristanhampton.ca/all-cycles">All Cycles.</a></h1>
+            <p>Edmonton, AB</p>
         </div>
-        <nav>
+        <div class="menu-button">&#9776;</div>
+        <nav class="hidden">
             <ul>
                 <li><a href="http://tristanhampton.ca/all-cycles">Home</a></li>
                 <li><a href="http://tristanhampton.ca/all-cycles/donate">Donate</a></li>

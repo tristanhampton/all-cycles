@@ -57,64 +57,13 @@ section {
  * Major Thirds: 39.06, 31.25, 25.00, 20.00, 16, 12.80, 10.24
  * Perfect Fourth: 50.52, 37.90, 28.43, 21.33, 16, 12.00, 9.00
  * =============================================== */
-p, li, label {
-  font: 1.6rem/2.4rem sans-serif;
+@font-face {
+  font-family: Work Sans;
+  src: url("assets/fonts/work-sans.ttf");
 }
-
-nav li {
-  font-size: 2.4rem;
-}
-
-.logo p {
-  font: 3.2rem/4.8rem sans-serif;
-}
-
 h1 {
-  font: 6.4rem/7.2rem sans-serif;
-}
-@media (min-width: 550px) {
-  h1 {
-    font-size: 3.125rem;
-    line-height: 4.8rem;
-  }
-}
-@media (min-width: 700px) {
-  h1 {
-    font-size: 3.79rem;
-    line-height: 4.8rem;
-  }
-}
-
-h2 {
-  font: 4.2rem/4.8rem serif;
-}
-@media (min-width: 550px) {
-  h2 {
-    font-size: 2.5rem;
-    line-height: 4.8rem;
-  }
-}
-@media (min-width: 700px) {
-  h2 {
-    font-size: 2.843rem;
-    line-height: 4.8rem;
-  }
-}
-
-h3 {
-  font: 3.2rem/4.8rem serif;
-}
-@media (min-width: 550px) {
-  h3 {
-    font-size: 2rem;
-    line-height: 2.4rem;
-  }
-}
-@media (min-width: 700px) {
-  h3 {
-    font-size: 2.133rem;
-    line-height: 2.4rem;
-  }
+  font: 200 2.4rem/1.5 "Work Sans", sans-serif;
+  text-transform: lowercase;
 }
 
 a {
@@ -133,19 +82,28 @@ a:hover {
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #a3333d;
+  padding: 1.2rem;
+  background-color: #860303;
   color: #FbF5F3;
+  position: relative;
 }
-header > div {
+header .hidden {
+  display: none;
+}
+header .logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
-header > div img {
-  margin-right: 1.2rem;
+header .logo img {
+  width: 3rem;
+  margin-bottom: 1.2rem;
+}
+header .menu-button {
+  font-size: 3rem;
+  position: absolute;
+  right: 1.2rem;
 }
 header ul {
   display: flex;

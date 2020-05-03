@@ -1,16 +1,23 @@
 header 
     display: flex
-    justify-content: space-between
-    align-items: center
-    max-width: 1200px
-    margin: 0 auto
-    background-color: $sweet-brown
+    padding: 1.2rem
+    background-color: $mid-red
     color: $white-smoke
-    &>div 
+    position: relative
+    .hidden 
+        display: none
+    .logo
         display: flex
+        flex-direction: column
         align-items: center
+        margin: 0 auto
         img 
-            margin-right: 1.2rem
+            width: 3rem
+            margin-bottom: 1.2rem
+    .menu-button
+        font-size: 3rem
+        position: absolute
+        right: 1.2rem
     ul 
         display: flex
         li 

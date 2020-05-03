@@ -20,7 +20,7 @@ add_action('wp_enqueue_scripts', 'all_cycles_styles');
 
 // Link JS
 function all_cycles_scripts () {
-    wp_enqueue_script("nav-menu",  get_template_directory_uri() . "/js/menu.js");
+    wp_enqueue_script("nav-menu",  get_template_directory_uri() . "/js/menu.js", array(), false, true);
 }
 add_action('wp_enqueue_scripts', 'all_cycles_scripts');
 
