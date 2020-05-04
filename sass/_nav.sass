@@ -1,27 +1,75 @@
-header 
-    display: flex
-    padding: 1.2rem
-    background-color: $mid-red
-    color: $white-smoke
+html 
     position: relative
+
+header 
+    background-color: $mid-red
+    .wrapper 
+        display: flex
+        color: $white-smoke
+        background-color: $mid-red
+        @include break(medium)
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 2.7rem 7.5%
+        @include break(wide)
+            max-width: 1000px
+            padding: 2.7rem 0
+            margin: 0 auto
     .hidden 
         display: none
     .logo
+        z-index: 200
+        padding: 1.2rem 0 0
         display: flex
         flex-direction: column
         align-items: center
-        margin: 0 auto
+        width: 100%
+        position: absolute
+        background-color: $mid-red
+        @include break(medium)
+            position: relative
+            padding: unset
+            width: unset
         img 
             width: 3rem
             margin-bottom: 1.2rem
-    .menu-button
-        font-size: 3rem
+    .menu-button, .close-button
+        font-size: 4.5rem
         position: absolute
         right: 1.2rem
+        z-index: 300
+        @include break(medium)
+            display: none
+
+nav 
+    background-color: $mid-red
+    padding: 2.7rem
+    margin-top: 14.6rem
+    color: $white-smoke
+    transition: 1s ease
+    width: 100%
     ul 
         display: flex
+        flex-direction: column
+        text-align: center
+        width: 100%
+    li 
+        margin-bottom: 1.35rem
+    @include break(medium)
+        padding: unset
+        width: unset
+        ul 
+            flex-direction: row 
         li 
             margin-right: 1.2rem
             &:last-of-type
                 margin-right: 0
 
+
+
+.slide-up 
+    margin-top: -15.1rem
+    transition: 1s ease
+    @include break(medium)
+        margin-top: unset
