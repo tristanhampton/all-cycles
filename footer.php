@@ -1,5 +1,4 @@
     <footer>
-        <div class="bezel"></div>
         <h2>Find Us On</h2>
         <ul>
             <li><a href="https://www.instagram.com/allcyclesyeg/">

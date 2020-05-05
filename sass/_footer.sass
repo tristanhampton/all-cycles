@@ -1,14 +1,10 @@
 footer 
-    overflow-x: hidden
     background-color: $mid-red
     color: $white-smoke
-    position: relative
-    &::before
-        content: ""
-        background-color: $mid-red
-        width: 200%
-        border-top-left-radius: 30%
-        border-top-right-radius: 30%
+    padding: 2.7rem 0
+    h2 
+        color: $white-smoke
+        text-align: center
     svg
         width: 40px
         height: 40px
@@ -16,13 +12,6 @@ footer
     ul 
         display: flex
         justify-content: space-between
-    .bezel
-        width: 160%
-        height: 220px
-        margin-left: -30%
-        border-top-left-radius: 80%
-        border-top-right-radius: 80%
-        background-color: $mid-red
-        z-index: -10
-        position: absolute
+        max-width: 270px 
+        margin: 0 auto
 

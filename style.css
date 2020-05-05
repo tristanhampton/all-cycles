@@ -62,12 +62,29 @@ section {
   src: url("assets/fonts/work-sans.ttf");
 }
 h1 {
-  font: 200 2.4rem/1.5 "Work Sans", sans-serif;
+  font: 200 3.516rem/1.5 "Work Sans", sans-serif;
   text-transform: lowercase;
 }
 
-p, li {
+h2 {
+  font: 200 2.813rem/1.5 "Work Sans", sans-serif;
+  color: #860303;
+}
+h2 span {
+  font-weight: 600;
+}
+
+h3 {
+  font: 200 2.25rem/1.5 "Work Sans", sans-serif;
+}
+
+p, li, input, button {
   font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+}
+
+.products p {
+  font-weight: 800;
+  font-size: 2.813rem;
 }
 
 a {
@@ -190,6 +207,69 @@ nav li {
   }
 }
 
+main .wrapper {
+  padding: 2.7rem 2.5%;
+}
+@media (min-width: 800px) {
+  main .wrapper {
+    padding: 5.4rem 7.5%;
+  }
+}
+@media (min-width: 1000px) {
+  main .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5.4rem 0;
+  }
+}
+main p {
+  margin-bottom: 1.35rem;
+  max-width: 700px;
+}
+main p:last-of-type {
+  margin-bottom: unset;
+}
+main .iframe-container {
+  margin: 2.7rem auto;
+}
+main .products, main form {
+  background-color: #5D0F1D;
+  color: #FbF5F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.7rem;
+}
+main .products p, main form p {
+  margin-bottom: unset;
+}
+main .products h2, main form h2 {
+  color: #FbF5F3;
+}
+main .products h2::after, main form h2::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 9rem;
+  border-bottom: 2px solid #EF271B;
+}
+main .products input, main form input {
+  padding: 0 1.35rem;
+  width: 27rem;
+  height: 2.7rem;
+  border: none;
+  border-radius: 25px;
+  margin: 1.35rem 0;
+}
+main .products button, main form button {
+  width: 13.5rem;
+  height: 2.7rem;
+  border: none;
+  background-color: #EF271B;
+  color: #FbF5F3;
+  border-radius: 25px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -221,6 +301,11 @@ nav li {
   max-width: 500px;
   max-height: 280px;
 }
+@media (min-width: 520px) {
+  .iframe-container {
+    padding-top: 280px;
+  }
+}
 
 .iframe-container iframe {
   border: 0;
@@ -239,17 +324,13 @@ nav li {
 }
 
 footer {
-  overflow-x: hidden;
   background-color: #860303;
   color: #FbF5F3;
-  position: relative;
+  padding: 2.7rem 0;
 }
-footer::before {
-  content: "";
-  background-color: #860303;
-  width: 200%;
-  border-top-left-radius: 30%;
-  border-top-right-radius: 30%;
+footer h2 {
+  color: #FbF5F3;
+  text-align: center;
 }
 footer svg {
   width: 40px;
@@ -259,16 +340,8 @@ footer svg {
 footer ul {
   display: flex;
   justify-content: space-between;
-}
-footer .bezel {
-  width: 160%;
-  height: 220px;
-  margin-left: -30%;
-  border-top-left-radius: 80%;
-  border-top-right-radius: 80%;
-  background-color: #860303;
-  z-index: -10;
-  position: absolute;
+  max-width: 270px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

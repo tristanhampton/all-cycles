@@ -1,0 +1,48 @@
+main 
+    .wrapper
+        padding: 2.7rem 2.5%
+        @include break(medium)
+            padding: 5.4rem 7.5%
+        @include break(wide)
+            max-width: 1000px 
+            margin: 0 auto
+            padding: 5.4rem 0
+    p 
+        margin-bottom: 1.35rem
+        max-width: 700px
+        &:last-of-type
+            margin-bottom: unset
+    .iframe-container 
+        margin: 2.7rem auto
+    .products, form
+        background-color: $dark-scarlet
+        color: $white-smoke
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 2.7rem
+        p 
+            margin-bottom: unset
+        h2 
+            color: $white-smoke
+            &::after
+                content: ""
+                display: block
+                margin: 0 auto
+                width: 9rem
+                border-bottom: 2px solid $lust
+        input 
+            padding: 0 1.35rem
+            width: 27rem
+            height: 2.7rem
+            border: none
+            border-radius: 25px
+            margin: 1.35rem 0
+        button
+            width: 13.5rem
+            height: 2.7rem 
+            border: none
+            background-color: $lust
+            color: $white-smoke
+            border-radius: 25px
+
