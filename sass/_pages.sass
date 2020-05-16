@@ -1,0 +1,30 @@
+.partner-container
+    @include break(medium)
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    
+.partner
+    @include card
+
+// Flex container and buttons styling for the buttons on the donations page.
+.flex-container
+    display: flex
+    flex-direction: row
+    margin: 2.7rem 0 5.4rem
+    &>*
+        margin-right: 2.7rem
+    a
+        @include button($mid-red, $white-smoke)
+    button
+        @include button($lust, $white-smoke)
+    .amazon-button
+        @include button-large
+
+.guidelines
+    section 
+        max-width: 700px
+        margin-bottom: 5.4rem
+    dd 
+        margin-bottom: 1.35rem
+        margin-left: 2.7rem

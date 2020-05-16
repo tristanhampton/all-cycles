@@ -1,0 +1,99 @@
+@mixin full-width-color($background-color, $text-color)
+    background-color: $background-color
+    color: $text-color
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 2.7rem
+    h2 
+        color: $text-color
+        &::after
+            content: ""
+            display: block
+            margin: 0 auto
+            width: 9rem
+            border-bottom: 2px solid $lust
+
+@mixin button($background-color, $text-color)
+    display: block
+    width: 13.5rem
+    height: 4.05rem 
+    border: none
+    background-color: $background-color
+    color: $text-color
+    border-radius: 25px
+    font: 300 1.8rem/1.5 "Work Sans", sans-serif
+    text-align: center
+    line-height: 4.05rem
+
+@mixin button-large
+    width: 21.5rem
+
+@mixin input
+    padding: 0 1.35rem
+    width: 27rem
+    height: 2.7rem
+    border: none
+    border-radius: 25px
+    margin: 1.35rem 0
+
+@mixin form-group 
+    display: flex
+    flex-direction: column
+    margin-bottom: 2.4rem
+    max-width: 300px
+    @include break(medium)
+        width: 48%
+        margin-right: 2.7rem
+        &.full-width 
+            max-width: 100%
+            width: 100%
+            margin-right: unset
+        &.textarea 
+            min-width:627px
+            margin-right: 100%
+    &.textarea
+        max-width: unset
+    p 
+        margin-bottom: 0.6rem
+    label 
+        margin-bottom: 0.6rem
+    .check-control
+        display: flex
+        align-items: center
+        margin-bottom: 0.6rem
+        input 
+            margin-right: 0.6rem
+        label 
+            margin-bottom: 0
+    textarea, input
+        padding: 0.6rem
+
+@mixin card
+    border-radius: 25px
+    box-shadow: 0px 7px 10px #aaa, 0px 0px 10px #aaa
+    padding: 2.7rem
+    margin-bottom: 5.4rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @include break(medium)
+        max-width: 48%
+        // align-self: flex-start
+    img 
+        display: block
+        margin: 0 auto
+        width: 12rem
+    h3 
+        color: $dark-scarlet
+        text-align: center
+    a 
+        margin: 0 auto
+        @include button($dark-scarlet, $white-smoke)
+    li
+        font-size: 1.6rem
+    ul 
+        margin-bottom: 1.35rem
+
+    
+

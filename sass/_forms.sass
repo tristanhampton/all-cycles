@@ -1,18 +1,8 @@
-.form-group 
-    display: flex
-    flex-direction: column
-    margin-bottom: 2.4rem
-    max-width: 300px
-    p 
-        margin-bottom: 0.6rem
-    label 
-        margin-bottom: 0.6rem
-    .check-control
+form
+    @include break(medium)
         display: flex
-        align-items: center
-        margin-bottom: 0.6rem
-        input 
-            margin-right: 0.6rem
-        label 
-            margin-bottom: 0
-
+        flex-wrap: wrap
+    button 
+        @include button($mid-red, $white-smoke)
+.form-group
+    @include form-group

@@ -24,9 +24,21 @@ html
 h2 
     margin-bottom: 1.2rem
 
-section 
-    padding: 4.8rem 5%
+.wrapper
+  padding: 2.7rem 2.5%
+  @include break(medium)
+      padding: 5.4rem 7.5%
+  @include break(wide)
+      max-width: 1000px 
+      margin: 0 auto
+      padding: 5.4rem 0
 
+p 
+  margin-bottom: 1.35rem
+  max-width: 700px
+  &:last-of-type
+      margin-bottom: unset
+      
 
 
 

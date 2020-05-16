@@ -38,8 +38,28 @@ h2 {
   margin-bottom: 1.2rem;
 }
 
-section {
-  padding: 4.8rem 5%;
+.wrapper {
+  padding: 2.7rem 2.5%;
+}
+@media (min-width: 800px) {
+  .wrapper {
+    padding: 5.4rem 7.5%;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5.4rem 0;
+  }
+}
+
+p {
+  margin-bottom: 1.35rem;
+  max-width: 700px;
+}
+p:last-of-type {
+  margin-bottom: unset;
 }
 
 /* ==========================================================================
@@ -76,10 +96,19 @@ h2 span {
 
 h3 {
   font: 200 2.25rem/1.5 "Work Sans", sans-serif;
+  color: #860303;
 }
 
-p, li, input, button {
+p, li, input, button, label, textarea, dd {
   font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+}
+
+dt {
+  font: 300 2rem/1.5 "Work Sans", sans-serif;
+}
+
+.check-control label {
+  font-size: 1.6rem;
 }
 
 .products p {
@@ -108,13 +137,13 @@ html {
 header {
   background-color: #860303;
 }
-header .wrapper {
+header .nav-wrapper {
   display: flex;
   color: #FbF5F3;
   background-color: #860303;
 }
 @media (min-width: 800px) {
-  header .wrapper {
+  header .nav-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,7 +151,7 @@ header .wrapper {
   }
 }
 @media (min-width: 1000px) {
-  header .wrapper {
+  header .nav-wrapper {
     max-width: 1000px;
     padding: 2.7rem 0;
     margin: 0 auto;
@@ -207,32 +236,10 @@ nav li {
   }
 }
 
-main .wrapper {
-  padding: 2.7rem 2.5%;
-}
-@media (min-width: 800px) {
-  main .wrapper {
-    padding: 5.4rem 7.5%;
-  }
-}
-@media (min-width: 1000px) {
-  main .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 5.4rem 0;
-  }
-}
-main p {
-  margin-bottom: 1.35rem;
-  max-width: 700px;
-}
-main p:last-of-type {
-  margin-bottom: unset;
-}
-main .iframe-container {
+.front-page .iframe-container {
   margin: 2.7rem auto;
 }
-main .products, main form {
+.front-page .products, .front-page form {
   background-color: #5D0F1D;
   color: #FbF5F3;
   display: flex;
@@ -240,20 +247,20 @@ main .products, main form {
   align-items: center;
   padding: 2.7rem;
 }
-main .products p, main form p {
-  margin-bottom: unset;
-}
-main .products h2, main form h2 {
+.front-page .products h2, .front-page form h2 {
   color: #FbF5F3;
 }
-main .products h2::after, main form h2::after {
+.front-page .products h2::after, .front-page form h2::after {
   content: "";
   display: block;
   margin: 0 auto;
   width: 9rem;
   border-bottom: 2px solid #EF271B;
 }
-main .products input, main form input {
+.front-page .products p, .front-page form p {
+  margin-bottom: unset;
+}
+.front-page .products input, .front-page form input {
   padding: 0 1.35rem;
   width: 27rem;
   height: 2.7rem;
@@ -261,13 +268,36 @@ main .products input, main form input {
   border-radius: 25px;
   margin: 1.35rem 0;
 }
-main .products button, main form button {
+.front-page .products button, .front-page form button {
+  display: block;
   width: 13.5rem;
-  height: 2.7rem;
+  height: 4.05rem;
   border: none;
   background-color: #EF271B;
   color: #FbF5F3;
   border-radius: 25px;
+  font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+  text-align: center;
+  line-height: 4.05rem;
+}
+
+@media (min-width: 800px) {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+form button {
+  display: block;
+  width: 13.5rem;
+  height: 4.05rem;
+  border: none;
+  background-color: #860303;
+  color: #FbF5F3;
+  border-radius: 25px;
+  font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+  text-align: center;
+  line-height: 4.05rem;
 }
 
 .form-group {
@@ -275,6 +305,24 @@ main .products button, main form button {
   flex-direction: column;
   margin-bottom: 2.4rem;
   max-width: 300px;
+}
+@media (min-width: 800px) {
+  .form-group {
+    width: 48%;
+    margin-right: 2.7rem;
+  }
+  .form-group.full-width {
+    max-width: 100%;
+    width: 100%;
+    margin-right: unset;
+  }
+  .form-group.textarea {
+    min-width: 627px;
+    margin-right: 100%;
+  }
+}
+.form-group.textarea {
+  max-width: unset;
 }
 .form-group p {
   margin-bottom: 0.6rem;
@@ -292,6 +340,102 @@ main .products button, main form button {
 }
 .form-group .check-control label {
   margin-bottom: 0;
+}
+.form-group textarea, .form-group input {
+  padding: 0.6rem;
+}
+
+.partner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.partner {
+  border-radius: 25px;
+  box-shadow: 0px 7px 10px #aaa, 0px 0px 10px #aaa;
+  padding: 2.7rem;
+  margin-bottom: 5.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 800px) {
+  .partner {
+    max-width: 48%;
+  }
+}
+.partner img {
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
+}
+.partner h3 {
+  color: #5D0F1D;
+  text-align: center;
+}
+.partner a {
+  margin: 0 auto;
+  display: block;
+  width: 13.5rem;
+  height: 4.05rem;
+  border: none;
+  background-color: #5D0F1D;
+  color: #FbF5F3;
+  border-radius: 25px;
+  font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+  text-align: center;
+  line-height: 4.05rem;
+}
+.partner li {
+  font-size: 1.6rem;
+}
+.partner ul {
+  margin-bottom: 1.35rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2.7rem 0 5.4rem;
+}
+.flex-container > * {
+  margin-right: 2.7rem;
+}
+.flex-container a {
+  display: block;
+  width: 13.5rem;
+  height: 4.05rem;
+  border: none;
+  background-color: #860303;
+  color: #FbF5F3;
+  border-radius: 25px;
+  font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+  text-align: center;
+  line-height: 4.05rem;
+}
+.flex-container button {
+  display: block;
+  width: 13.5rem;
+  height: 4.05rem;
+  border: none;
+  background-color: #EF271B;
+  color: #FbF5F3;
+  border-radius: 25px;
+  font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+  text-align: center;
+  line-height: 4.05rem;
+}
+.flex-container .amazon-button {
+  width: 21.5rem;
+}
+
+.guidelines section {
+  max-width: 700px;
+  margin-bottom: 5.4rem;
+}
+.guidelines dd {
+  margin-bottom: 1.35rem;
+  margin-left: 2.7rem;
 }
 
 .iframe-container {

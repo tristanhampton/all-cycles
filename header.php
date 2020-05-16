@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <div class="nav-wrapper">
             <div class="logo">
                 <a href="http://tristanhampton.ca/all-cycles"><img src="<?php echo get_template_directory_uri();?>/assets/img/droplet-white.svg" alt="All Cycles logo"></a> 
                 <h1><a href="http://tristanhampton.ca/all-cycles">All Cycles.</a></h1>
