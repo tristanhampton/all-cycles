@@ -1,8 +1,10 @@
 .partner-container
+    margin-top: 2.7rem
     @include break(medium)
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+
     
 .partner
     @include card
@@ -10,10 +12,17 @@
 // Flex container and buttons styling for the buttons on the donations page.
 .flex-container
     display: flex
-    flex-direction: row
-    margin: 2.7rem 0 5.4rem
+    flex-direction: column
+    align-items: center
+    margin-bottom: 2.7rem
     &>*
-        margin-right: 2.7rem
+        margin-top: 2.7rem
+    @include break(medium)
+        flex-direction: row
+        margin: 2.7rem 0 5.4rem
+        &>*
+            margin-top: unset
+            margin-right: 2.7rem
     a
         @include button($mid-red, $white-smoke)
     button

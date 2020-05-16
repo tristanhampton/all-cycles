@@ -25,6 +25,10 @@
     font: 300 1.8rem/1.5 "Work Sans", sans-serif
     text-align: center
     line-height: 4.05rem
+    transition: 1s ease
+    &:hover 
+        transition: 1s ease
+        background-color: $bulgarian-rose
 
 @mixin button-large
     width: 21.5rem
@@ -68,6 +72,7 @@
             margin-bottom: 0
     textarea, input
         padding: 0.6rem
+        border: 1px solid #aaa
 
 @mixin card
     border-radius: 25px

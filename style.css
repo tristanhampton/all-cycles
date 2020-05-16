@@ -41,7 +41,7 @@ h2 {
 .wrapper {
   padding: 2.7rem 2.5%;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .wrapper {
     padding: 5.4rem 7.5%;
   }
@@ -103,6 +103,12 @@ p, li, input, button, label, textarea, dd {
   font: 300 1.8rem/1.5 "Work Sans", sans-serif;
 }
 
+@media (min-width: 1000px) {
+  nav li {
+    font: 300 2.25rem/1.5 "Work Sans", sans-serif;
+  }
+}
+
 dt {
   font: 300 2rem/1.5 "Work Sans", sans-serif;
 }
@@ -119,6 +125,7 @@ dt {
 a {
   color: inherit;
   text-decoration: none;
+  transition: 1s ease;
 }
 a:visited {
   color: inherit;
@@ -127,7 +134,8 @@ a:active {
   color: inherit;
 }
 a:hover {
-  color: #333;
+  color: #EF271B;
+  transition: 1s ease;
 }
 
 html {
@@ -142,7 +150,7 @@ header .nav-wrapper {
   color: #FbF5F3;
   background-color: #860303;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   header .nav-wrapper {
     display: flex;
     align-items: center;
@@ -162,15 +170,14 @@ header .hidden {
 }
 header .logo {
   z-index: 200;
-  padding: 1.2rem 0 0;
+  padding: 1.2rem 0 1.2rem 1.2rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
   position: absolute;
   background-color: #860303;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   header .logo {
     position: relative;
     padding: unset;
@@ -179,15 +186,16 @@ header .logo {
 }
 header .logo img {
   width: 3rem;
-  margin-bottom: 1.2rem;
+  margin-right: 1.35rem;
 }
 header .menu-button, header .close-button {
   font-size: 4.5rem;
   position: absolute;
+  top: 1.2rem;
   right: 1.2rem;
   z-index: 300;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   header .menu-button, header .close-button {
     display: none;
   }
@@ -210,7 +218,7 @@ nav ul {
 nav li {
   margin-bottom: 1.35rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   nav {
     padding: unset;
     width: unset;
@@ -219,18 +227,25 @@ nav li {
     flex-direction: row;
   }
   nav li {
-    margin-right: 1.2rem;
+    margin-right: 1.35rem;
   }
+}
+@media (min-width: 850px) and (min-width: 1000px) {
+  nav li {
+    margin-right: 2.7rem;
+  }
+}
+@media (min-width: 850px) {
   nav li:last-of-type {
     margin-right: 0;
   }
 }
 
 .slide-up {
-  margin-top: -15.1rem;
+  margin-top: -20rem;
   transition: 1s ease;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .slide-up {
     margin-top: unset;
   }
@@ -279,9 +294,14 @@ nav li {
   font: 300 1.8rem/1.5 "Work Sans", sans-serif;
   text-align: center;
   line-height: 4.05rem;
+  transition: 1s ease;
+}
+.front-page .products button:hover, .front-page form button:hover {
+  transition: 1s ease;
+  background-color: #3e000c;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   form {
     display: flex;
     flex-wrap: wrap;
@@ -298,6 +318,11 @@ form button {
   font: 300 1.8rem/1.5 "Work Sans", sans-serif;
   text-align: center;
   line-height: 4.05rem;
+  transition: 1s ease;
+}
+form button:hover {
+  transition: 1s ease;
+  background-color: #3e000c;
 }
 
 .form-group {
@@ -306,7 +331,7 @@ form button {
   margin-bottom: 2.4rem;
   max-width: 300px;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .form-group {
     width: 48%;
     margin-right: 2.7rem;
@@ -343,9 +368,11 @@ form button {
 }
 .form-group textarea, .form-group input {
   padding: 0.6rem;
+  border: 1px solid #aaa;
 }
 
 .partner-container {
+  margin-top: 2.7rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -359,7 +386,7 @@ form button {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .partner {
     max-width: 48%;
   }
@@ -385,6 +412,11 @@ form button {
   font: 300 1.8rem/1.5 "Work Sans", sans-serif;
   text-align: center;
   line-height: 4.05rem;
+  transition: 1s ease;
+}
+.partner a:hover {
+  transition: 1s ease;
+  background-color: #3e000c;
 }
 .partner li {
   font-size: 1.6rem;
@@ -395,11 +427,22 @@ form button {
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  margin: 2.7rem 0 5.4rem;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.7rem;
 }
 .flex-container > * {
-  margin-right: 2.7rem;
+  margin-top: 2.7rem;
+}
+@media (min-width: 850px) {
+  .flex-container {
+    flex-direction: row;
+    margin: 2.7rem 0 5.4rem;
+  }
+  .flex-container > * {
+    margin-top: unset;
+    margin-right: 2.7rem;
+  }
 }
 .flex-container a {
   display: block;
@@ -412,6 +455,11 @@ form button {
   font: 300 1.8rem/1.5 "Work Sans", sans-serif;
   text-align: center;
   line-height: 4.05rem;
+  transition: 1s ease;
+}
+.flex-container a:hover {
+  transition: 1s ease;
+  background-color: #3e000c;
 }
 .flex-container button {
   display: block;
@@ -424,6 +472,11 @@ form button {
   font: 300 1.8rem/1.5 "Work Sans", sans-serif;
   text-align: center;
   line-height: 4.05rem;
+  transition: 1s ease;
+}
+.flex-container button:hover {
+  transition: 1s ease;
+  background-color: #3e000c;
 }
 .flex-container .amazon-button {
   width: 21.5rem;

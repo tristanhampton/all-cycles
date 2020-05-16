@@ -35,6 +35,11 @@ h3
 p, li, input, button, label, textarea, dd
   font: 300 1.8rem/1.5 "Work Sans", sans-serif
 
+nav 
+  li 
+    @include break(wide)
+      font: 300 2.25rem/1.5 "Work Sans", sans-serif
+
 dt
   font: 300 2.0rem/1.5 "Work Sans", sans-serif
 
@@ -51,10 +56,12 @@ dt
 a 
   color: inherit
   text-decoration: none
+  transition: 1s ease
   &:visited
     color: inherit
   &:active
     color: inherit
   &:hover
-    color: #333
+    color: $lust
+    transition: 1s ease
 

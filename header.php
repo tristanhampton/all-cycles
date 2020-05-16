@@ -11,8 +11,10 @@
         <div class="nav-wrapper">
             <div class="logo">
                 <a href="http://tristanhampton.ca/all-cycles"><img src="<?php echo get_template_directory_uri();?>/assets/img/droplet-white.svg" alt="All Cycles logo"></a> 
-                <h1><a href="http://tristanhampton.ca/all-cycles">All Cycles.</a></h1>
-                <p>Edmonton, AB</p>
+                <div>
+                    <h1><a href="http://tristanhampton.ca/all-cycles">All Cycles.</a></h1>
+                    <p>Edmonton, AB</p>
+                </div>
             </div>
             <div class="menu-button">&#9776;</div>
             <div class="close-button hidden">&times;</div>

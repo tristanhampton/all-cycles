@@ -20,9 +20,8 @@ header
         display: none
     .logo
         z-index: 200
-        padding: 1.2rem 0 0
+        padding: 1.2rem 0 1.2rem 1.2rem
         display: flex
-        flex-direction: column
         align-items: center
         width: 100%
         position: absolute
@@ -33,10 +32,11 @@ header
             width: unset
         img 
             width: 3rem
-            margin-bottom: 1.2rem
+            margin-right: 1.35rem
     .menu-button, .close-button
         font-size: 4.5rem
         position: absolute
+        top: 1.2rem
         right: 1.2rem
         z-index: 300
         @include break(medium)
@@ -62,14 +62,16 @@ nav
         ul 
             flex-direction: row 
         li 
-            margin-right: 1.2rem
+            margin-right: 1.35rem
+            @include break(wide)
+                margin-right: 2.7rem
             &:last-of-type
                 margin-right: 0
 
 
 
 .slide-up 
-    margin-top: -15.1rem
+    margin-top: -20rem
     transition: 1s ease
     @include break(medium)
         margin-top: unset
