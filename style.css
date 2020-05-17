@@ -204,7 +204,7 @@ header .menu-button, header .close-button {
 nav {
   background-color: #860303;
   padding: 2.7rem;
-  margin-top: 14.6rem;
+  margin-top: 8.6rem;
   color: #FbF5F3;
   transition: 1s ease;
   width: 100%;
@@ -489,6 +489,33 @@ form button:hover {
 .guidelines dd {
   margin-bottom: 1.35rem;
   margin-left: 2.7rem;
+}
+.guidelines p:first-of-type {
+  margin-bottom: 1.35rem;
+}
+.guidelines a:first-of-type {
+  display: block;
+  width: 13.5rem;
+  height: 4.05rem;
+  border: none;
+  background-color: #860303;
+  color: #FbF5F3;
+  border-radius: 25px;
+  font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+  text-align: center;
+  line-height: 4.05rem;
+  transition: 1s ease;
+  margin-bottom: 2.7rem;
+}
+.guidelines a:first-of-type:hover {
+  transition: 1s ease;
+  background-color: #3e000c;
+}
+.guidelines dt {
+  color: #860303;
+}
+.guidelines h3 {
+  font-weight: 400;
 }
 
 .iframe-container {

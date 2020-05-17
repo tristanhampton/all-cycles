@@ -2,7 +2,8 @@
 <main class="guidelines">
     <div class="wrapper">
         <h2>Donation Guidelines</h2>
-        <p>We recognize that there are many different menstrual products on the market, and it could be challenging deciding what exactly to pick out! This page is dedicated to providing guidance on what we love to receive here at All Cycles. </p>
+        <p>We recognize that there are many different menstrual products on the market, and it could be challenging deciding what exactly to pick out! This page is dedicated to providing guidance on what we love to receive here at All Cycles. The guidelines are also available for download.</p>
+        <a href="<?php get_template_directory_uri() ?>/assets/documents/guidelines.pdf" download>Download</a>
         <section>
             <h3>Pads</h3>
             <dl>
@@ -74,9 +75,10 @@
         <section>
             <h3>Menstrual Cups & Re-usable Pads</h3>
             <p>All Cycles is currently accepting these donations, but please be aware they will only be used to support the income insecure, and NOT the homeless. This is because they are not practical for many people who do not have regular access to washrooms or laundry facilities. Additionally, the long term use of these items can cause problems for anyone who does not have permanent housing and regularly travels with their belongings limited to what will fit in a backpack.</p>
+            <p>Please be aware that we only accept menstrual products, as these are rarely donated to shelters.</p>
         </section>
 
-        <p>Please be aware that we only accept menstrual products, as these are rarely donated to shelters.</p>
+
     </div>
 </main>
 <?php get_footer() ?>
