@@ -260,7 +260,7 @@ nav li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.7rem;
+  padding: 5.4rem;
 }
 .front-page .products h2, .front-page form h2 {
   color: #FbF5F3;
@@ -299,6 +299,46 @@ nav li {
 .front-page .products button:hover, .front-page form button:hover {
   transition: 1s ease;
   background-color: #3e000c;
+}
+.front-page .event {
+  border-radius: 9px;
+  box-shadow: 0px 5px 5px #aaa, 0px 0px 5px #aaa;
+  padding: 2.7rem;
+  margin-bottom: 2.7rem;
+  display: inline-block;
+}
+.front-page .event img {
+  width: 100%;
+  margin-bottom: 1.35rem;
+}
+@media (min-width: 520px) {
+  .front-page .event img {
+    max-width: 270px;
+    margin: 0 1.35rem 0 0;
+    float: left;
+  }
+}
+@media (min-width: 850px) {
+  .front-page .event img {
+    max-width: unset;
+    float: unset;
+    margin: 0 0 1.35rem 0;
+  }
+}
+.front-page .event h3 {
+  color: #5D0F1D;
+  text-align: center;
+  margin-bottom: 1.35rem;
+}
+@media (min-width: 520px) {
+  .front-page .event h3 {
+    text-align: unset;
+  }
+}
+@media (min-width: 850px) {
+  .front-page .event h3 {
+    text-align: center;
+  }
 }
 
 @media (min-width: 850px) {
@@ -373,23 +413,32 @@ form button:hover {
 
 .partner-container {
   margin-top: 2.7rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.partner {
-  border-radius: 25px;
-  box-shadow: 0px 7px 10px #aaa, 0px 0px 10px #aaa;
-  padding: 2.7rem;
-  margin-bottom: 5.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 @media (min-width: 850px) {
-  .partner {
-    max-width: 48%;
+  .partner-container {
+    column-gap: 2.7rem;
   }
+}
+
+@media (min-width: 850px) {
+  .two-column {
+    columns: 2 auto;
+  }
+}
+
+@media (min-width: 850px) {
+  .three-column {
+    columns: 3 auto;
+  }
+}
+
+.partner {
+  border-radius: 9px;
+  box-shadow: 0px 5px 5px #aaa, 0px 0px 5px #aaa;
+  padding: 2.7rem;
+  margin-bottom: 2.7rem;
+  display: inline-block;
+  width: 100%;
 }
 .partner img {
   display: block;
@@ -425,10 +474,20 @@ form button:hover {
   margin-bottom: 1.35rem;
 }
 
+.donate .partner {
+  margin-right: 2.7rem;
+  width: 315px;
+}
+@media (min-width: 850px) {
+  .donate .partner {
+    margin-right: unset;
+    width: 100%;
+  }
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 2.7rem;
 }
 .flex-container > * {
@@ -482,7 +541,7 @@ form button:hover {
   width: 21.5rem;
 }
 
-.guidelines section {
+.guidelines dl {
   max-width: 700px;
   margin-bottom: 5.4rem;
 }

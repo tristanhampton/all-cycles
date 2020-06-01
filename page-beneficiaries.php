@@ -7,7 +7,7 @@
             <!-- Loop over beneficiaries -->
             <?php $query = new WP_Query(array('post_type'=>'beneficiary')) ?>
             <?php if($query -> have_posts()): ?>
-            <section class="partner-container">
+            <section class="partner-container two-column">
                 <?php while($query -> have_posts()): $query -> the_post(); ?>
                 <?php $address = get_field('address') ?>
                 <div class="partner">

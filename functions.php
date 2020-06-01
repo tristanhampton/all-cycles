@@ -91,9 +91,26 @@ function save_post_type_donations($post_id) {
     wp_update_post($post);
 }
 
+function save_post_type_events($post_id) {
+    $post_type = get_post_type($post_id);
+    if ($post_type != 'events') {
+        return;
+    }
+
+    $post_title = get_field('title');
+    $post_name = sanitize_title($post_title);
+    $post = array(
+        'ID' => $post_id,
+        'post_name' => $post_name,
+        'post_title' => $post_title
+    );
+    wp_update_post($post);
+}
+
 add_action('acf/save_post', 'save_post_type_beneficiary'); 
 add_action('acf/save_post', 'save_post_type_resource'); 
 add_action('acf/save_post', 'save_post_type_donations'); 
+add_action('acf/save_post', 'save_post_type_events');
 
 
 // Hide the following pages from the WP dashboard. Comment out to bring back.

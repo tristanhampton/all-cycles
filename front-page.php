@@ -16,8 +16,18 @@
     </div>
 
     <div class="wrapper">
-        <div class="photo">
-            <p>Thomas Dang Donation</p>
+        <h2>What's New</h2>
+        <div class="partner-container two-column">
+            <?php $query = new WP_Query(array('post_type'=>'events', 'order'=>'DESC', 'orderby'=>'date', "posts_per_page"=>4)) ?>
+            <?php if($query -> have_posts()): ?>
+            <?php while($query -> have_posts()): $query -> the_post(); ?>
+            <div class="event">
+                <img src="<?php the_field('image')  ?>" alt="Photo from <?php the_field('title') ?>">
+                <h3><?php the_field('title') ?></h3> 
+                <p><?php the_field('description') ?></p>
+            </div>
+            <?php endwhile ?>
+            <?php endif ?>
         </div>
     </div>
 

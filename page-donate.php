@@ -7,6 +7,7 @@
         <p>If you have products at home that you aren’t using, please review our donation guidelines before dropping them off at any of the donation locations below. </p>
         <!-- Donation button links to paypal using this form. -->
         <div class="flex-container">
+            <a href="http://tristanhampton.ca/all-cycles/guidelines">Guidelines</a>
             <form class="paypal-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_donations" />
                 <input type="hidden" name="business" value="allcyclesedmonton@gmail.com" />
@@ -14,13 +15,12 @@
                 <button type="submit">Donate</button>
             </form>
             <a class="amazon-button" href="https://www.amazon.ca/gp/registry/wishlist/OFRL3HEEQAXF/ref=nav_wishlist_lists_1">Amazon Wishlist</a>
-            <a href="http://tristanhampton.ca/all-cycles/guidelines">Guidelines</a>
         </div>
         
         <h2>Donation Locations</h2>
         <?php $query = new WP_Query(array('post_type'=>'donation_location')) ?>
         <?php if($query -> have_posts()): ?>
-        <section class="partner-container">
+        <section class="partner-container three-column">
             <?php while($query -> have_posts()): $query -> the_post(); ?>
             <?php $address = get_field('address') ?>
             <div class="partner">

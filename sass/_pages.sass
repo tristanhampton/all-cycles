@@ -1,19 +1,32 @@
 .partner-container
     margin-top: 2.7rem
     @include break(medium)
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
+        column-gap: 2.7rem
+
+.two-column 
+    @include break(medium)
+        columns: 2 auto 
+
+.three-column
+    @include break(medium) 
+        columns: 3 auto
 
     
 .partner
     @include card
 
+.donate
+    .partner 
+        margin-right: 2.7rem
+        width: 315px
+        @include break(medium)
+            margin-right: unset
+            width: 100%
+
 // Flex container and buttons styling for the buttons on the donations page.
 .flex-container
     display: flex
     flex-direction: column
-    align-items: center
     margin-bottom: 2.7rem
     &>*
         margin-top: 2.7rem
@@ -31,7 +44,7 @@
         @include button-large
 
 .guidelines
-    section 
+    dl 
         max-width: 700px
         margin-bottom: 5.4rem
     dd 
