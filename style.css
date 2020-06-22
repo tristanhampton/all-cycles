@@ -251,6 +251,42 @@ nav li {
   }
 }
 
+body .error-messages {
+  color: #EF271B;
+  margin-bottom: 2.7rem;
+}
+body .front-page-errors {
+  color: #fff;
+  margin: 2.7rem 0 0 0;
+}
+body form .form-error {
+  border: 1px solid #EF271B;
+}
+body form .form-error[type=radio], body form .form-error[type=checkbox] {
+  box-shadow: #EF271B 0 0 4px;
+}
+
+.submit-button {
+  position: relative;
+}
+.submit-button .clickable {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 500;
+}
+
+.required {
+  position: relative;
+}
+.required::after {
+  content: "*";
+  position: absolute;
+  color: #EF271B;
+}
+
 .front-page .iframe-container {
   margin: 2.7rem auto;
 }
@@ -369,12 +405,12 @@ form button:hover {
   display: flex;
   flex-direction: column;
   margin-bottom: 2.4rem;
-  max-width: 300px;
 }
 @media (min-width: 850px) {
   .form-group {
     width: 48%;
     margin-right: 2.7rem;
+    max-width: 300px;
   }
   .form-group.full-width {
     max-width: 100%;
@@ -384,6 +420,7 @@ form button:hover {
   .form-group.textarea {
     min-width: 627px;
     margin-right: 100%;
+    max-width: unset;
   }
 }
 .form-group.textarea {
@@ -409,6 +446,9 @@ form button:hover {
 .form-group textarea, .form-group input {
   padding: 0.6rem;
   border: 1px solid #aaa;
+}
+.form-group input {
+  max-width: 300px;
 }
 
 .partner-container {
@@ -476,13 +516,21 @@ form button:hover {
 
 .donate .partner {
   margin-right: 2.7rem;
-  width: 315px;
+  width: 100%;
+}
+@media (min-width: 520px) {
+  .donate .partner {
+    width: 315px;
+  }
 }
 @media (min-width: 850px) {
   .donate .partner {
     margin-right: unset;
     width: 100%;
   }
+}
+.donate img {
+  margin-bottom: 1.35rem;
 }
 
 .flex-container {
@@ -547,7 +595,6 @@ form button:hover {
 }
 .guidelines dd {
   margin-bottom: 1.35rem;
-  margin-left: 2.7rem;
 }
 .guidelines p:first-of-type {
   margin-bottom: 1.35rem;

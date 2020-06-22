@@ -1,0 +1,29 @@
+body
+    .error-messages
+        color: $lust
+        margin-bottom: 2.7rem
+    .front-page-errors
+        color: #fff
+        margin: 2.7rem 0 0 0
+    form
+        .form-error
+            border: 1px solid $lust
+        .form-error[type=radio], .form-error[type=checkbox]
+            box-shadow: $lust 0 0 4px
+
+.submit-button 
+    position: relative
+    .clickable
+        position: absolute
+        left: 0
+        right: 0
+        top: 0 
+        bottom: 0
+        z-index: 500
+
+.required
+    position: relative 
+    &::after
+        content: '*'
+        position: absolute
+        color: $lust

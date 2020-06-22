@@ -18,10 +18,14 @@
 .donate
     .partner 
         margin-right: 2.7rem
-        width: 315px
+        width: 100%
+        @include break(small)
+            width: 315px
         @include break(medium)
             margin-right: unset
             width: 100%
+    img 
+        margin-bottom: 1.35rem
 
 // Flex container and buttons styling for the buttons on the donations page.
 .flex-container
@@ -49,7 +53,6 @@
         margin-bottom: 5.4rem
     dd 
         margin-bottom: 1.35rem
-        margin-left: 2.7rem
     p:first-of-type
         margin-bottom: 1.35rem
     a:first-of-type 

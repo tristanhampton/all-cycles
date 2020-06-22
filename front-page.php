@@ -12,7 +12,14 @@
 
     <div class="products">
         <h2>Products Donated</h2>
-        <p>13,314</p>
+        <?php $query = new WP_Query(array('post_type'=>'products_donated', 'order'=>'DESC', 'orderby'=>'date', "posts_per_page"=>1)) ?>
+        <?php if($query -> have_posts()): ?>
+        <?php while($query -> have_posts()): $query -> the_post(); ?>
+        <?php $quantity = get_field('number_of_products_donated') ?>
+        <?php $quantity = number_format($quantity, 0, ',', ',') ?>
+        <p><?php echo $quantity ?></p>
+        <?php endwhile ?>
+        <?php endif ?>
     </div>
 
     <div class="wrapper">
@@ -31,12 +38,17 @@
         </div>
     </div>
 
-    <form action="#">
+    <form action="https://formspree.io/xpzylllp" method="POST">
+        <input type="hidden" name="_subject" value="New newsletter subscription!" />
         <h2>Join Our Mailing List</h2>
         <p>Never miss an update,</p>
         <p>Enter your email below</p>
-        <input type="text">
-        <button>Sign Up!</button>
+        <input id="email" type="email" name="Email">
+        <div class="submit-button">
+            <div class="clickable"></div>
+            <button role="submit" disabled>Sign Up!</button>
+        </div>
+        <div class="error-messages front-page-errors"></div>
     </form>
 </main>
 

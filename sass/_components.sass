@@ -45,10 +45,10 @@
     display: flex
     flex-direction: column
     margin-bottom: 2.4rem
-    max-width: 300px
     @include break(medium)
         width: 48%
         margin-right: 2.7rem
+        max-width: 300px
         &.full-width 
             max-width: 100%
             width: 100%
@@ -56,6 +56,7 @@
         &.textarea 
             min-width:627px
             margin-right: 100%
+            max-width: unset
     &.textarea
         max-width: unset
     p 
@@ -73,6 +74,8 @@
     textarea, input
         padding: 0.6rem
         border: 1px solid #aaa
+    input 
+        max-width: 300px
 
 @mixin card
     border-radius: 9px
@@ -123,6 +126,7 @@
             text-align: unset
         @include break(medium)
             text-align: center
+
 
 
     

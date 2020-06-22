@@ -1,0 +1,16 @@
+.admin-container {
+    max-width: 700px;
+}
+
+h1 {
+    margin: 1em 0 0.3em 0;
+    line-height: 1.2
+}
+
+h2 {
+    margin: 0 0 0.3em 0
+}
+
+p {
+    margin: 0 0 2em 0
+}
