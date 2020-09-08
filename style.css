@@ -19,6 +19,18 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -375,6 +387,43 @@ body form .form-error[type=radio], body form .form-error[type=checkbox] {
   .front-page .event h3 {
     text-align: center;
   }
+}
+.front-page .splash {
+  background-color: #860303;
+  color: #FbF5F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.4rem;
+}
+.front-page .splash h2 {
+  color: #FbF5F3;
+}
+.front-page .splash h2::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 9rem;
+  border-bottom: 2px solid #EF271B;
+}
+.front-page .splash a {
+  display: block;
+  width: 13.5rem;
+  height: 4.05rem;
+  border: none;
+  background-color: #EF271B;
+  color: #FbF5F3;
+  border-radius: 25px;
+  font: 300 1.8rem/1.5 "Work Sans", sans-serif;
+  text-align: center;
+  line-height: 4.05rem;
+  transition: 1s ease;
+  width: 21.5rem;
+  margin-top: 1.35rem;
+}
+.front-page .splash a:hover {
+  transition: 1s ease;
+  background-color: #3e000c;
 }
 
 @media (min-width: 850px) {

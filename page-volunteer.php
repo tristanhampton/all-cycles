@@ -5,7 +5,7 @@
         <h2>Volunteer</h2>
         <div class="error-messages"></div>
 
-        <form action="https://formspree.io/xwkrqqro" method="POST">
+        <form action="https://formspree.io/moqklllv" method="POST">
             <input type="hidden" name="_subject" value="New Volunteer" />
             <div class="form-group">
                 <label for="first_name" class="required">First Name</label>

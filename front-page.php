@@ -22,6 +22,12 @@
         <?php endif ?>
     </div>
 
+    <div class="splash">
+        <h2>Want Products Delivered?</h2>
+        <p>We know things have been tough during the COVID-19 epidemic. We're now offering free delivery of menstrual products to those that need them!</p>
+        <a href="https://docs.google.com/forms/d/1VGVBLUdW23XLSNRkCh1OonrKICGPzKse4kGqxYhsdqo/viewform?edit_requested=true#responses">Request Delivery</a>
+    </div>
+
     <div class="wrapper">
         <h2>What's New</h2>
         <div class="partner-container two-column">

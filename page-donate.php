@@ -7,7 +7,7 @@
         <p>If you have products at home that you aren’t using, please review our donation guidelines before dropping them off at any of the donation locations below. </p>
         <!-- Donation button links to paypal using this form. -->
         <div class="flex-container">
-            <a href="http://tristanhampton.ca/all-cycles/guidelines">Guidelines</a>
+            <a href="http://allcyclesyeg.ca/guidelines">Guidelines</a>
             <form class="paypal-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_donations" />
                 <input type="hidden" name="business" value="allcyclesedmonton@gmail.com" />

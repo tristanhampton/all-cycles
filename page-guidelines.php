@@ -3,7 +3,7 @@
     <div class="wrapper">
         <h2>Donation Guidelines</h2>
         <p>We recognize that there are many different menstrual products on the market, and it could be challenging deciding what exactly to pick out! This page is dedicated to providing guidance on what we love to receive here at All Cycles. The guidelines are also available for download.</p>
-        <a href="<?php get_template_directory_uri() ?>/assets/documents/guidelines.pdf" download>Download</a>
+        <a href="<?php get_template_directory_uri() ?>/wp-content/themes/all-cycles/assets/documents/guidelines-all-cycles.pdf" download>Download</a>
         
         <h3>Pads</h3>
         <dl>
