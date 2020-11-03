@@ -425,6 +425,9 @@ body form .form-error[type=radio], body form .form-error[type=checkbox] {
   transition: 1s ease;
   background-color: #3e000c;
 }
+.front-page .splash h2 {
+  text-align: center;
+}
 
 @media (min-width: 850px) {
   form {
