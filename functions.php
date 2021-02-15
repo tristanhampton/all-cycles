@@ -191,15 +191,15 @@ function remove_menus(){
     remove_menu_page( 'edit.php?post_type=page' );    //Pages
 
 }
-add_action( 'admin_menu', 'remove_menus' );
+// add_action( 'admin_menu', 'remove_menus' );
 
 
 // Hide ACF from the dashboard
-add_filter('acf/settings/show_admin', '__return_false');
+// add_filter('acf/settings/show_admin', '__return_false');
 
 
 // Hide CPT UI from the dashboard
-remove_action( 'admin_menu', 'cptui_plugin_menu' );
+// remove_action( 'admin_menu', 'cptui_plugin_menu' );
 
 
 // Redirect dashboard initial page
@@ -219,7 +219,7 @@ function remove_toolbar_buttons($wp_admin_bar) {
     $wp_admin_bar->remove_node('edit');
     $wp_admin_bar->remove_node('themes');
 }
-add_action('admin_bar_menu', 'remove_toolbar_buttons', 999);
+// add_action('admin_bar_menu', 'remove_toolbar_buttons', 999);
 
 
 
