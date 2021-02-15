@@ -35,11 +35,11 @@
                 </div>
                 <div class="check-control">
                     <input type="checkbox" id="events" name="Event Planning">
-                    <label for="events">Event Planning</label>
+                    <label for="events">Events</label>
                 </div>
                 <div class="check-control">
                     <input type="checkbox" id="promotions" name="Promotional Planning">
-                    <label for="promotions">Promotional Planning</label>
+                    <label for="promotions">Promotional</label>
                 </div>
             </div>
 
