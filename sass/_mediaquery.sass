@@ -11,8 +11,13 @@
     @else if $point == exwide 
         @media (min-width: 1800px)
             @content
+    @else if $point == desktop 
+        @media (min-width: 1020px)
+            @content
 
 // EXAMPLE
 // header
     // @include break(medium)
         // Add styles here
+        // 
+        // 

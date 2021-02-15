@@ -1,18 +1,10 @@
-@mixin full-width-color($background-color, $text-color)
-    background-color: $background-color
-    color: $text-color
-    display: flex
-    flex-direction: column
-    align-items: center
-    padding: 5.4rem
-    h2 
-        color: $text-color
-        &::after
-            content: ""
-            display: block
-            margin: 0 auto
-            width: 9rem
-            border-bottom: 2px solid $lust
+@mixin header-decoration
+    &:after 
+        content: ""
+        display: block
+        margin: 0 auto
+        width: 9rem
+        border-bottom: 2px solid $lust
 
 @mixin button($background-color, $text-color)
     display: block

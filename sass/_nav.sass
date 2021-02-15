@@ -10,18 +10,18 @@ header
             color: $white
         &:hover 
             color: $lust
-    .nav-wrapper 
+    .container 
         display: flex
         color: $white-smoke
         background-color: $mid-red
+        padding: 0 2rem
         @include break(medium)
             display: flex
             align-items: center
             justify-content: space-between
-            padding: 2.7rem 7.5%
+            padding: 2.7rem 2rem
         @include break(wide)
-            max-width: 1000px
-            padding: 2.7rem 0
+            padding: 2.7rem 2rem
             margin: 0 auto
     .hidden 
         display: none
@@ -75,9 +75,6 @@ nav
             &:last-of-type
                 margin-right: 0
     
-
-
-
 .slide-up 
     margin-top: -20rem
     transition: 1s ease

@@ -1,23 +1,54 @@
 .front-page 
-    .iframe-container 
-        margin: 2.7rem auto
-    .products, form
-        @include full-width-color($dark-scarlet, $white-smoke)
-        p 
-            margin-bottom: unset
-        input 
-            @include input
-        button
-            @include button($lust, $white-smoke)
+    .intro 
+        .iframe-container 
+            width: 100%
+            margin: 2rem auto 0
+        @include break(desktop)
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .content 
+                width: 45%
+    .products
+        background: $dark-scarlet
+        color: $white-smoke
+        text-align: center
+        h2 
+            color: $white-smoke
+            @include header-decoration
     .event
         @include event-card
+        position: relative
+        padding-bottom: 6rem
     .splash 
-        @include full-width-color($mid-red, $white-smoke)
+        background: $mid-red
+        color: $white-smoke
+        text-align: center
         a 
             @include button($lust, $white-smoke)
             @include button-large
-            margin-top: 1.35rem
+            margin: 1.35rem auto 0
+
         h2 
-            text-align: center
+            color: $white-smoke
+            @include header-decoration
+
+    .newsletter 
+        background: $dark-scarlet
+        color: $white-smoke
+        text-align: center
+        h2 
+            color: $white-smoke
+        form    
+            display: flex
+            flex-direction: column
+        input 
+            @include input
+            margin: 1.35rem auto
+        button
+            @include button($lust, $white-smoke)
+            margin: 0 auto
+
+
 
 
